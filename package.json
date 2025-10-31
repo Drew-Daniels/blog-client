@@ -38,7 +38,10 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier 'src/**/*.ts'",
-    "format:write": "prettier 'src/**/*.ts' --write"
+    "format:write": "prettier 'src/**/*.ts' --write",
+    "pregen": "rm -rf src/generated/*",
+    "gen": "openapi-generator-cli generate -i openapi/openapi.json -g typescript-axios -o src/generated --enable-post-process-file --skip-validate-spec",
+    "postgen": "fix-esm-import-path src/generated && prettier src/generated -w"
   },
   "types": "dist/index.d.ts"
 }

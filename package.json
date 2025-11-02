@@ -1,9 +1,9 @@
 {
-  "name": "blog-client",
+  "name": "blog-sdk",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "author": "Drew Daniels",
-  "bugs": "https://github.com/Drew-Daniels/foo/issues",
+  "bugs": "https://github.com/Drew-Daniels/blog-sdk/issues",
   "devDependencies": {
     "@cspell/eslint-plugin": "^9.2.0",
     "@eslint/js": "^9.33.0",
@@ -23,12 +23,12 @@
   "files": [
     "/dist"
   ],
-  "homepage": "https://github.com/Drew-Daniels/foo",
+  "homepage": "https://github.com/Drew-Daniels/blog-sdk",
   "keywords": [],
   "license": "MIT",
   "main": "dist/index.js",
   "type": "module",
-  "repository": "Drew-Daniels/foo",
+  "repository": "Drew-Daniels/blog-sdk",
   "scripts": {
     "dev": "tsc -w",
     "build": "shx rm -rf dist && tsc -b",
